@@ -1,0 +1,75 @@
+
+#banner-image
+{
+    padding: 75px 0 50px;
+    text-align: center;
+    color: #f8f8f8;
+    background: url(./images/bgimage1.jpg);
+    background-size: cover;
+}
+#banner-content
+{
+   position: relative;
+   padding: 6% 0 6% 0;
+   margin: 12% 0 12% 0;
+   background-color: rgba(0, 0, 0, 0.7);
+
+}
+footer
+{
+    padding: 10px 0;
+    background-color: #101010;
+    color:#9d9d9d;
+    bottom: 10%;
+    width: 100%;
+    text-align: center;
+}
+
+#panel
+{
+    position: relative;
+    padding: 75px;
+    display:flex;
+    justify-content: center;
+}
+
+#product-banner
+{
+    padding: 75px;
+    text-align: center;
+    background-color: #9d9d9d;
+    margin: 5% 12% 5% 12%;
+    border-radius: 10px;
+}
+
+#products
+{
+    margin: 5% 12% 0 12%;
+    border-radius: 10px;
+    display: inline-flex;
+    text-align: center;
+}
+
+#prod-preview
+{
+    width:250px;
+    text-align: center;
+    padding: 7px 7px 7px 7px;
+}
+#thumbnail-pic
+{
+    height: 150px;
+}
+#tablediv
+{
+    margin-top: 75px;
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;
+}
+#success
+{
+    margin-top: 75px;
+    padding-bottom: 50px;
+    text-align: center;
+}

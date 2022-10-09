@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>LifeStyle Store</title>
+</head>
+<body>
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar">
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+        </button>
+        <a href="index.html" class="navbar-brand">LifeStyle Store</a>
+      </div>
+      <div class="collapse navbar-collapse" id="mynavbar">
+         <ul class="nav navbar-nav navbar-right">
+          <li><a href="settings.html"><span class="glyphicon glyphicon-cog"></span> Settings</a></li> 
+          <li><a href="index.html">Logout <span class="glyphicon glyphicon-log-out"></span></a></li>
+         </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container" id="tablediv">
+<table class="table-bordered" id="table">
+    <tr>
+        <td class="col-xs-3">Item Number</td>
+        <td class="col-xs-3">Item Name</td>
+        <td class="col-xs-3">Price</td>
+        <td class="col-xs-3"></td>
+    </tr>
+   
+    <tr>
+        <td class="col-xs-3"></td>
+        <td class="col-xs-3">Total</td>
+        <td class="col-xs-3" id="total">Rs 0</td>
+        <td class="col-xs-3"><a href="success.html"><button class="btn btn-primary">Place Order</button></a></td>
+    </tr>
+</table>
+</div>
+<script src="cart.js"></script>
+</body>
+<footer>
+    <div class="container">
+      Copyright <span class="glyphicon glyphicon-copyright-mark"></span> LifeStyle Store. 
+      All rights reserved | Contact Us : +91 90000 00000
+    </div>
+  </footer>
+</html>

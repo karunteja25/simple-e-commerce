@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>LifeStyle Store</title>
+</head>
+<body>
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar">
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+        </button>
+        <a href="index.html" class="navbar-brand">LifeStyle Store</a>
+      </div>
+      <div class="collapse navbar-collapse" id="mynavbar">
+         <ul class="nav navbar-nav navbar-right">
+          <li><a href="cart.html">Cart <span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+          <li><a href="settings.html"><span class="glyphicon glyphicon-cog"></span> Settings</a></li> 
+          <li><a href="index.html">Logout <span class="glyphicon glyphicon-log-out"></span></a></li>
+         </ul>
+      </div>
+    </div>
+  </nav>
+  <div id="product-banner">
+    <h1>Welcome to LifeStyle Store</h1>
+    <p>Your one stop destination for all your fashion needs</p>
+  </div>
+
+  <div class="container" id="products">
+      <div class="col-md-3 col-sm-6">
+          <img src="./images/cam1.jpg" class="img-thumbnail" id="thumbnail-pic">
+          <p>Sony DSLR MR</p>
+          <p>Price : &#8377 55,000</p>
+          <button class="btn btn-primary btn-block" onclick="insertRow(101,'Sony DSLR MR',55000)">Add to cart</button>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <img src="./images/cam2.jpg" class="img-thumbnail" id="thumbnail-pic">
+        <p>Canon EOS Mark50</p>
+        <p>Price : &#8377 30,000</p>
+        <button class="btn btn-primary btn-block" onclick="insertRow(102,'Canon EOS Mark50',30000)">Add to cart</button>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <img src="./images/cam3.jpg" class="img-thumbnail" id="thumbnail-pic">
+        <p>Sony Mirrorless</p>
+        <p>Price : &#8377 60,000</p>
+        <button class="btn btn-primary btn-block" onclick="insertRow(103,'Sony Mirrorless',60000)">Add to cart</button>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <img src="./images/cam4.jpg" class="img-thumbnail" id="thumbnail-pic">
+        <p>Canon Mark20</p>
+        <p>Price : &#8377 45,000</p>
+        <button class="btn btn-primary btn-block" onclick="insertRow(104,'Canon Mark20',45000)">Add to cart</button>
+      </div>
+    </div>
+    <div class="container" id="products">
+      <div class="col-md-3 col-sm-6">
+        <img src="./images/shirt1.jpg" class="img-thumbnail" id="thumbnail-pic">
+        <p>T-shirt</p>
+        <p>Price : &#8377 450</p>
+        <button class="btn btn-primary btn-block" onclick="insertRow(201,'T-shirt',450)">Add to cart</button>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <img src="./images/shirt2.jpg" class="img-thumbnail" id="thumbnail-pic">
+        <p>T-shirt</p>
+        <p>Price : &#8377 600</p>
+        <button class="btn btn-primary btn-block" onclick="insertRow(202,'T-shirt',600)">Add to cart</button>
+       </div>
+      <div class="col-md-3 col-sm-6">
+        <img src="./images/shirt3.jpg" class="img-thumbnail" id="thumbnail-pic">
+        <p>Casual shirt</p>
+        <p>Price : &#8377 700</p>
+        <button class="btn btn-primary btn-block" onclick="insertRow(203,'Casual shirt',700)">Add to cart</button>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <img src="./images/shirt4.jpg" class="img-thumbnail" id="thumbnail-pic">
+        <p>Formal shirt</p>
+        <p>Price : &#8377 900</p>
+        <button class="btn btn-primary btn-block" onclick="insertRow(204,'Formal shirt',900)">Add to cart</button>
+      </div>
+   </div>
+   <div class="container" id="products">
+    <div class="col-md-3 col-sm-6">
+      <img src="./images/watch1.jpg" class="img-thumbnail" id="thumbnail-pic">
+      <p>Apple SmartWatch</p>
+      <p>Price : &#8377 20,000</p>
+      <button class="btn btn-primary btn-block" onclick="insertRow(301,'Apple SmartWatch',20000)">Add to cart</button>
+    </div>
+    <div class="col-md-3 col-sm-6">
+      <img src="./images/watch2.jpg" class="img-thumbnail" id="thumbnail-pic">
+      <p>Casio Edifice</p>
+      <p>Price : &#8377 12,000</p>
+      <button class="btn btn-primary btn-block" onclick="insertRow(302,'Casio Edifice',12000)">Add to cart</button>
+     </div>
+    <div class="col-md-3 col-sm-6">
+      <img src="./images/watch3.jpg" class="img-thumbnail" id="thumbnail-pic">
+      <p>Titan Watch+</p>
+      <p>Price : &#8377 15,000</p>
+      <button class="btn btn-primary btn-block" onclick="insertRow(303,'Titan Watch+',15000)">Add to cart</button>
+    </div>
+    <div class="col-md-3 col-sm-6"style="margin-bottom: 5%;">
+      <img src="./images/watch4.jpeg" class="img-thumbnail" id="thumbnail-pic">
+      <p>OnePlus fitness band</p>
+      <p>Price : &#8377 3,000</p>
+      <button class="btn btn-primary btn-block" onclick="insertRow(304,'OnePlus fitness band',3000)">Add to cart</button>
+    </div>
+ </div>
+ <script src="cart.js"></script>
+  </body>
+  <footer>
+    <div class="container">
+      Copyright <span class="glyphicon glyphicon-copyright-mark"></span> LifeStyle Store. 
+      All rights reserved | Contact Us : +91 90000 00000
+    </div>
+  </footer>
+  </html>
